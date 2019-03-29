@@ -13,6 +13,12 @@ $(function(){
 
         if(environment === "big-business" && content === "gaming" && backing === "microsoft" && nerd === "yes-nerd" && animal === "cheetah") {
             $('.csharp').show('slow');
+
+        }else if(environment === "small-business" && content === "apps" && backing === "no-microsoft" && nerd === "no-nerd" && animal === "rhino") {
+            $('.java').show('slow');
+
+        }else if(environment === "indifferent-business" && content === "backend" && backing === "linux" && nerd === "middle-nerd" && animal === "turtle") {
+            $('.php').show('slow');
         }
         event.preventDefault();
     });
