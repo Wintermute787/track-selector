@@ -1,16 +1,16 @@
 var csharp = 0;
 var java = 0;
 var php = 0;
-  
 
 
 
 
-$(function(){
 
-    $("#formOne").submit(function(event){
+$(function () {
+
+    $("#formOne").submit(function (event) {
         event.preventDefault();
-        
+
         var name = $('input#name').val();
         var email = $('input#email').val();
         var address1 = $('input#inputAddress').val();
@@ -29,9 +29,9 @@ $(function(){
 
         $('.user-info').show('slow');
     });
-    
-    $("#questions").submit(function(event){
-        
+
+    $("#questions").submit(function (event) {
+
         $('.csharp').hide();
         $('.java').hide();
         $('.php').hide();
@@ -42,9 +42,9 @@ $(function(){
         var nerd = $('input:radio[name=nerd]:checked').val();
         var animal = $('input:radio[name=animal]:checked').val();
 
-    
 
-        if(environment === "big-business"){
+
+        if (environment === "big-business") {
             csharp += 5;
             java += 2;
             php += 1;
@@ -52,142 +52,83 @@ $(function(){
             csharp += 1;
             java += 5;
             php = 2;
-        }else if(environment === "indifferent-business"){
-            csharp +=2;
+        } else if (environment === "indifferent-business") {
+            csharp += 2;
             java += 1;
             php += 5;
         };
 
-        if(content === 'gaming'){
+        if (content === 'gaming') {
             csharp += 5;
             java += 2;
             php += 1;
-        }else if (content === 'apps'){
+        } else if (content === 'apps') {
             csharp += 2;
             java += 5;
             php += 1;
-        }else if(content === 'backend'){
+        } else if (content === 'backend') {
             csharp += 1;
             java += 2;
             php += 5;
         };
 
-        if(backing === 'microsoft'){
+        if (backing === 'microsoft') {
             csharp += 5;
             java += 2;
             php += 1;
-        }else if (backing === 'no-microsoft'){
+        } else if (backing === 'no-microsoft') {
             csharp += 2;
             java += 5;
             php += 1;
-        }else if(backing === 'linux'){
+        } else if (backing === 'linux') {
             csharp += 1;
             java += 2;
             php += 5;
         };
 
-        if(nerd === 'yes-nerd'){
+        if (nerd === 'yes-nerd') {
             csharp += 5;
             java += 2;
             php += 1;
-        }else if (nerd === 'no-nerd'){
+        } else if (nerd === 'no-nerd') {
             csharp += 2;
             java += 5;
             php += 1;
-        }else if(nerd === 'middle-nerd'){
+        } else if (nerd === 'middle-nerd') {
             csharp += 1;
             java += 2;
             php += 5;
         };
 
-        if(animal === 'cheetah'){
+        if (animal === 'cheetah') {
             csharp += 5;
             java += 2;
             php += 1;
-        }else if (animal === 'rhino'){
+        } else if (animal === 'rhino') {
             csharp += 2;
             java += 5;
             php += 1;
-        }else if(animal === 'turtle'){
+        } else if (animal === 'turtle') {
             csharp += 1;
             java += 2;
             php += 5;
         };
-    
+
         console.log(csharp);
         console.log(java);
         console.log(php);
-        
-        function score(csharp, java, php){
-            if(csharp > java && csharp > php){
+
+        function score(csharp, java, php) {
+            if (csharp > java && csharp > php) {
                 $('.csharp').show('slow');
-            }else if(java > csharp && java > php){
+            } else if (java > csharp && java > php) {
                 $('.java').show('slow');
-            }else {
+            } else {
                 $('.php').show('slow');
             };
         };
 
         score(csharp, java, php);
-   
-        
-
-
-        // if(environment === "big-business" && content === "gaming" && backing === "microsoft" && nerd === "yes-nerd" && animal === "cheetah") {
-        //     $('.csharp').show('slow');
-
-        // }else if(environment === "small-business" && content === "apps" && backing === "no-microsoft" && nerd === "no-nerd" && animal === "rhino") {
-        //     $('.java').show('slow');
-
-        // }else if(environment === "indifferent-business" && content === "backend" && backing === "linux" && nerd === "middle-nerd" && animal === "turtle") {
-        //     $('.php').show('slow');
-
-        // }else if(environment === "big-business" && content === "apps" && backing === "no-microsoft" && nerd === "no-nerd" && animal === "rhino") {
-        //     $('.java').show('slow');
-
-        // }else if(environment === "big-business" && content === "backend" && backing === "linux" && nerd === "middle-nerd" && animal === "turtle") {
-        //     $('.php').show('slow');
-
-        // }else if(environment === "small-business" && content === "gaming" && backing === "microsoft" && nerd === "yes-nerd" && animal === "cheetah") {
-        //     $('.csharp').show('slow');
-
-        // }else if(environment === "small-business" && content === "apps" && backing === "no-microsoft" && nerd === "no-nerd" && animal === "rhino") {
-        //     $('.java').show('slow');
-
-        // }else if(environment === "small-business" && content === "backend" && backing === "linux" && nerd === "middle-nerd" && animal === "turtle") {
-        //     $('.php').show('slow');
-
-        // }else if(environment === "indifferent-business" && content === "gaming" && backing === "microsoft" && nerd === "yes-nerd" && animal === "cheetah") {
-        //     $('.csharp').show('slow');
-
-        // }else if(environment === "indifferent-business" && content === "apps" && backing === "no-microsoft" && nerd === "no-nerd" && animal === "rhino") {
-        //     $('.java').show('slow');
-
-        // }else if(environment === "big-business" && content === "gaming" && backing === "no-microsoft" && nerd === "no-nerd" && animal === "rhino") {
-        //     $('.java').show('slow');
-
-        // }else if(environment === "big-business" && content === "apps" && backing === "linux" && nerd === "middle-nerd" && animal === "turtle") {
-        //     $('.php').show('slow');
-
-        // }else if(environment === "big-business" && content === "apps" && backing === "microsoft" && nerd === "yes-nerd" && animal === "cheetah") {
-        //     $('.csharp').show('slow');
-
-        // }else if(environment === "big-business" && content === "backend" && backing === "microsoft" && nerd === "yes-nerd" && animal === "cheetah") {
-        //     $('.csharp').show('slow');
-
-        // }else if(environment === "big-business" && content === "backend" && backing === "no-microsoft" && nerd === "no-nerd" && animal === "rhino") {
-        //     $('.java').show('slow');
-
-        // }else if(environment === "big-business" && content === "backend" && backing === "linux" && nerd === "middle-nerd" && animal === "turtle") {
-        //     $('.php').show('slow');
-
-        // }
-
-
-
-
-
-
 
 
         event.preventDefault();

@@ -1,3 +1,17 @@
+body {
+    background-color: #add9f4;
+    font-family: 'Assistant', sans-serif;
+    color: #101419;
+}
+
+.navbar {
+    background-color: #101419;
+}
+
+.navbar-brand{
+    color: #add9f4;
+}
+
 img {
     width: 300px;
     float: left;
@@ -15,4 +29,22 @@ img {
 
 .page-title {
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    margin: 35px 0;
+}
+
+.footer{
+    background-color: #101419;
+    height: 90px;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-content {
+    color: #add9f4;
+    text-transform: uppercase;
+    letter-spacing: 35px;
+    font-weight: bold;
 }
