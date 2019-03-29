@@ -12,3 +12,7 @@ img {
 .user-info {
     display: none;
 }
+
+.page-title {
+    text-align: center;
+}
