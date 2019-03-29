@@ -12,12 +12,27 @@ body {
     color: #add9f4;
 }
 
-img {
+.track-pic {
     width: 300px;
     float: left;
     margin-right: 35px;
     border: 4px solid #101419;;
     padding: 10px;
+}
+
+#bg {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bgwidth {
+    width: 100%;
+}
+
+.bgheight {
+    height: 100%;
 }
 
 .csharp, .java, .php {
