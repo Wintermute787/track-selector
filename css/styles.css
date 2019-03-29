@@ -25,14 +25,49 @@ img {
 
 .user-info {
     display: none;
+    text-align: center;
+    color: #add9f4;
+    background-color: #476c9b;
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: 1em;
 }
 
-.page-title {
+#page-title {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 15px;
     margin: 35px 0;
 }
+
+.container-title {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 5em;
+}
+
+.container-form {
+    color: #add9f4;
+    background-color: #476c9b;
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.container-radio {
+    color: #add9f4;
+    text-align: center;
+    background-color: #476c9b;
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: 1em;
+}
+
 
 .footer{
     background-color: #101419;
