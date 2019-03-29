@@ -5,23 +5,32 @@ body {
 }
 
 .navbar {
-    background-color: #101419;
+    background-color: #101419a1;
 }
 
-.navbar-brand{
+.navbar-brand {
     color: #add9f4;
+    text-transform: uppercase;
+    letter-spacing: 35px;
+    font-weight: bold;
+}
+
+.container-title {
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 .track-pic {
     width: 300px;
     float: left;
     margin-right: 35px;
-    border: 4px solid #101419;;
+    border: 4px solid #101419;
     padding: 10px;
 }
 
 #bg {
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
@@ -35,7 +44,9 @@ body {
     height: 100%;
 }
 
-.csharp, .java, .php {
+.csharp,
+.java,
+.php {
     margin-top: 35px;
     display: none;
 }
@@ -44,7 +55,7 @@ body {
     display: none;
     text-align: center;
     color: #add9f4;
-    background-color: #476c9b;
+    background-color: #476b9bc7;
     border: 1px solid black;
     border-radius: 1em;
     padding: 1em;
@@ -56,6 +67,9 @@ body {
     letter-spacing: 15px;
     margin: 35px 0;
     transition: all .4s;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 #page-title::after {
@@ -65,7 +79,7 @@ body {
     background: red;
     transition: all .4s ease-in;
     display: block;
-    
+
 }
 
 #page-title:hover::after {
@@ -80,7 +94,7 @@ body {
 
 .container-form {
     color: #add9f4;
-    background-color: #476c9b;
+    background-color: #476b9bc7;
     border: 1px solid black;
     border-radius: 1em;
     padding: 1em;
@@ -94,7 +108,7 @@ h2 {
 .container-radio {
     color: #add9f4;
     text-align: center;
-    background-color: #476c9b;
+    background-color: #476b9bc7;
     border: 1px solid black;
     border-radius: 1em;
     padding: 1em;
@@ -103,7 +117,7 @@ h2 {
 .container-tracks {
     color: #add9f4;
     text-align: center;
-    background-color: #476c9b;
+    background-color: #476b9bc7;
     border: 1px solid black;
     border-radius: 1em;
     padding: 1em;
@@ -111,14 +125,15 @@ h2 {
 }
 
 
-.footer{
-    background-color: #101419;
+.footer {
+    background-color: #101419a1;
     height: 90px;
     margin-top: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .footer-content {
     color: #add9f4;
     text-transform: uppercase;
