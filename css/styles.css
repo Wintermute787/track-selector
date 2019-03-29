@@ -1,0 +1,10 @@
+img {
+    width: 300px;
+    float: left;
+    margin-right: 35px;
+}
+
+.csharp, .java, .php {
+    margin-top: 35px;
+    display: none;
+}
