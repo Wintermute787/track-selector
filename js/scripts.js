@@ -1,4 +1,27 @@
 $(function(){
+
+    $("#formOne").submit(function(event){
+        event.preventDefault();
+        
+        var name = $('input#name').val();
+        var email = $('input#email').val();
+        var address1 = $('input#inputAddress').val();
+        var address2 = $('input#inputAddress2').val();
+        var city = $('input#inputCity').val();
+        var state = $('input#inputState').val();
+        var zip = $('input#inputZip').val();
+
+        $('.name').text(name);
+        $('.email').text(email);
+        $('.inputAddress').text(address1);
+        $('.inputAddress2').text(address2);
+        $('.inputCity').text(city);
+        $('.inputState').text(state);
+        $('.inputZip').text(zip);
+
+        $('.user-info').show('slow');
+    });
+    
     $("#questions").submit(function(event){
         
         $('.csharp').hide();

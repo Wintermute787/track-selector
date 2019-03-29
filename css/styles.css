@@ -8,3 +8,7 @@ img {
     margin-top: 35px;
     display: none;
 }
+
+.user-info {
+    display: none;
+}

@@ -22,7 +22,7 @@
     </div>
     <div class="container">
         <h2>Fill in your personal information.</h2>
-        <form>
+        <form id="formOne">
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="name">Name</label>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="form-group col-md-6">
                     <label for="email">Email</label>
-                    <input type="emil" class="form-control" id="email" placeholder="email">
+                    <input type="email" class="form-control" id="email" placeholder="email">
                 </div>
             </div>
             <div class="form-group">
@@ -48,10 +48,7 @@
                 </div>
                 <div class="form-group col-md-4">
                     <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>...</option>
-                    </select>
+                    <input typle="text" class="form-control" id="inputState">
                 </div>
                 <div class="form-group col-md-2">
                     <label for="inputZip">Zip</label>
@@ -62,7 +59,14 @@
             </div>
             <button type="submit" class="btn btn-success">Submit</button>
         </form>
-
+        <br>
+        <div class="user-info">
+            <p>Hello, <span class="name"></span></p>
+            <p>Thank you for checking out this short survey! By submitting your personal info. It will better help learn more about you</p>
+            <p>With the info you provided, your address is: <span class="inputAddress"></span> <span class="inputAddress2"></span> <span class="inputCity"></span> <span class="inputState"></span>, <span class="inputZip"></span></p>
+            <p>By submitting your email, we will also send you more information at <span class="email"></span></p>
+        </div>
+        <br>
         <h2>Answer the questions to see your track.</h2>
         <p>Now that we have some basic information, let's decide which track would best fit you. There are 5 questions
             to answer. Once you submit the questions, our logic will place you with the best fit!</p>
