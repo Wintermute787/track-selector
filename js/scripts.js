@@ -127,6 +127,8 @@ $(function(){
                 $('.php').show('slow');
             };
         };
+
+        score(csharp, java, php);
    
         
 
