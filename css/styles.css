@@ -59,6 +59,7 @@ body {
     border: 1px solid black;
     border-radius: 1em;
     padding: 1em;
+    box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.459);
 }
 
 #page-title {
@@ -98,6 +99,7 @@ body {
     border: 1px solid black;
     border-radius: 1em;
     padding: 1em;
+    box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.459);
 }
 
 h2 {
@@ -112,6 +114,7 @@ h2 {
     border: 1px solid black;
     border-radius: 1em;
     padding: 1em;
+    box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.459);
 }
 
 .container-tracks {
@@ -122,6 +125,7 @@ h2 {
     border-radius: 1em;
     padding: 1em;
     margin-top: 2em;
+    box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.459);
 }
 
 
